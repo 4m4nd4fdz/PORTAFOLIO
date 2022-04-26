@@ -1,16 +1,19 @@
 /* Imports - Tipografía */
 @font-face {
-    font-family: "";
-    src: url(""), format("woff");
+    font-family: "Arimo";
+    src: url("https: //res.cloudinary.com/centrooooo/raw/upload/v1650990860/fonts/Arimo-Regular_cvljno.woff"), format(" woff");  }
+@font-face {
+    font-family: "MrEaves";
+    src: url("https://res.cloudinary.com/pmichventura/raw/upload/v1650992069/CENTRO/MrsEavesSmartLigItalic_reybgb.woff"), format("woff");
   }
-  
+
   /* Reset */
   *,
   *::before,
   *::after {
     box-sizing: border-box;
   }
-  
+
   body,
   h1,
   h2,
@@ -22,29 +25,29 @@
   picture {
     margin: 0;
   }
-  
+
   body {
     line-height: 1.5;
     min-height: 100vh;
   }
-  
+
   ul {
     margin: 0;
     padding-inline: 0;
   }
-  
+
   li {
     list-style: none;
   }
-  
+
   img,
   picture {
     max-width: 100%;
     display: block;
   }
-  
+
   @media (prefers-reduced-motion: reduce) {
-  
+
     *,
     *::before,
     *::after {
@@ -54,14 +57,15 @@
       scroll-behaviour: auto !important;
     }
   }
-  
+
   /* Variables */
   :root {
     /* 1. Colores */
     --black: #000000;
     --white: #ffffff;
     /* 2. Tipografía */
-    --font-family: sans-serif;
+    --font-family-arimo: "Arimo", sans-serif;
+    --font-family-mr: "MrEaves";
     --font-size-1: 1rem;
     --font-size-2: 1.1rem;
     --font-size-3: 1.25rem;
@@ -75,19 +79,22 @@
     --size-mobile: 414px;
     --size-desktop: 1440px;
   }
-  
+
   /* Base */
   body {
-    font-family: var(--font-family);
+    font-family: var(--font-family-arimo);
     background-color: var(--white);
     color: var(--black);
   }
-  
+
   h1,
   h2,
   h3,
   h4,
   h5 {
-    font-family: var(--font-bold);
+    font-weight: 400;
+    font-family: var(--font-family-mr);
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 50px;
   }
-  
