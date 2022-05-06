@@ -1,13 +1,15 @@
 /* Imports - Tipografía */
 @font-face {
   font-family: "Arimo";
-  src: url("https: //res.cloudinary.com/centrooooo/raw/upload/v1650990860/fonts/Arimo-Regular_cvljno.woff"), format(" woff");
+  src: url("https: //res.cloudinary.com/centrooooo/raw/upload/v1650990860/fonts/Arimo-Regular_cvljno.woff"),
+    format(" woff");
 }
 
-@font-face {
-  font-family: "MissFajardose";
-  src: url("https: //res.cloudinary.com/centrooooo/raw/upload/v1651866293/fonts/MissFajardose-Regular_eu8nsb.woff"), format("woff");
-}
+/* @font-face {
+  font-family: "MyFont";
+  src: url("https: //res.cloudinary.com/centrooooo/raw/upload/v1651866293/fonts/MissFajardose-Regular_eu8nsb.woff"),
+    format("woff");
+} */
 
 /* Reset */
 *,
@@ -49,7 +51,6 @@ picture {
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   *,
   *::before,
   *::after {
@@ -67,7 +68,7 @@ picture {
   --white: #ffffff;
   /* 2. Tipografía */
   --font-family-arimo: "Arimo", sans-serif;
-  --font-family-mr: "MissFajardose";
+  --font-family-cursive: "Miss Fajardose", cursive;
   --font-size-1: 1rem;
   --font-size-2: 1.1rem;
   --font-size-3: 1.25rem;
@@ -95,7 +96,7 @@ h3,
 h4,
 h5 {
   font-weight: 400;
-  font-family: var(--font-family-mr);
+  font-family: var(--font-family-cursive);
   font-style: italic;
   text-transform: uppercase;
   font-size: 50px;
