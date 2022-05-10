@@ -105,3 +105,23 @@ h1:hover,
 h2:hover {
   font-family: var(--font-family-cursive);
 }
+
+/* Home */
+.home {
+  display: grid;
+  grid-template-columns: 60px auto 1fr;
+}
+
+/* Nav */
+.nav {
+  writing-mode: vertical-rl;
+  border: 1px solid black;
+  height: 100vh;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transform: rotate(180deg);
+  width: 60px;
+}
