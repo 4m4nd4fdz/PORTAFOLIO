@@ -50,8 +50,11 @@ picture {
   display: block;
 }
 
-@media (prefers-reduced-motion: reduce) {
+a {
+  text-decoration: none;
+}
 
+@media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
@@ -126,11 +129,10 @@ h2:hover {
   font-family: var(--font-family-cursive);
 }
 
-
 /* Nav */
 .nav {
   writing-mode: vertical-rl;
-  border: .75px solid black;
+  border: 0.75px solid black;
   height: 100vh;
   font-size: 35px;
 }
@@ -142,6 +144,18 @@ h2:hover {
   transform: rotate(180deg);
   width: 65px;
 }
+.nav ul li {
+  cursor: pointer;
+}
+.nav ul a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav ul .active {
+  font-family: var(--font-family-cursive);
+}
+/* .nav ul .active:hover {
+} */
 
 /* Proyectos */
 .proyectos {
@@ -156,11 +170,11 @@ h2:hover {
 }
 
 .DPC:hover {
-  font-family: var(--font-family-cursive)
+  font-family: var(--font-family-cursive);
 }
 
 .imagenDPC {
-  size: 40px
+  size: 40px;
 }
 
 .ED {
