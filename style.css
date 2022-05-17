@@ -46,11 +46,12 @@ li {
 
 img,
 picture {
-  max-width: 100%;
+  max-width: 74%;
   display: block;
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -109,19 +110,79 @@ h2:hover {
 /* Home */
 .home {
   display: grid;
-  grid-template-columns: 60px auto 1fr;
+  grid-template-columns: 65px auto 1fr;
+  font-size: 35px;
 }
+
+.portafolio:hover {
+  font-family: var(--font-family-cursive);
+}
+
+.cv:hover {
+  font-family: var(--font-family-cursive);
+}
+
+.contacto:hover {
+  font-family: var(--font-family-cursive);
+}
+
 
 /* Nav */
 .nav {
   writing-mode: vertical-rl;
-  border: 1px solid black;
+  border: .75px solid black;
   height: 100vh;
+  font-size: 35px;
 }
+
 .nav ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
   transform: rotate(180deg);
-  width: 60px;
+  width: 65px;
+}
+
+/* Proyectos */
+.proyectos {
+  display: flex;
+  align-items: center;
+  line-height: 150px;
+  justify-content: space-around;
+}
+
+.DPC {
+  line-height: 40px;
+}
+
+.DPC:hover {
+  font-family: var(--font-family-cursive)
+}
+
+.imagenDPC {
+  size: 40px
+}
+
+.ED {
+  line-height: 40px;
+}
+
+.ED:hover {
+  font-family: var(--font-family-cursive);
+}
+
+.RD:hover {
+  font-family: var(--font-family-cursive);
+}
+
+.R:hover {
+  font-family: var(--font-family-cursive);
+}
+
+.UF {
+  line-height: 30px;
+}
+
+.UF:hover {
+  font-family: var(--font-family-cursive);
 }
