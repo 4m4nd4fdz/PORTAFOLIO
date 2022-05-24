@@ -55,6 +55,7 @@ a {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -130,30 +131,39 @@ h2:hover {
 }
 
 /* Nav */
-.nav {
+.navhome {
   writing-mode: vertical-rl;
   border: 0.75px solid black;
   height: 100vh;
   font-size: 35px;
 }
 
-.nav ul {
+.navhome ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
   transform: rotate(180deg);
   width: 65px;
 }
-.nav ul li {
+
+.navhome ul li {
   cursor: pointer;
 }
-.nav ul a {
+
+.navhome ul a {
   text-decoration: none;
-  color: inherit;
+  color: black;
 }
-.nav ul .active {
+
+.navlista ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.navhome ul .active {
   font-family: var(--font-family-cursive);
 }
+
 /* .nav ul .active:hover {
 } */
 
@@ -163,40 +173,32 @@ h2:hover {
   align-items: center;
   line-height: 150px;
   justify-content: space-around;
+  padding-right: 80%;
 }
 
-.DPC {
-  line-height: 40px;
-}
 
-.DPC:hover {
+
+.p01:hover {
   font-family: var(--font-family-cursive);
 }
 
-.imagenDPC {
+.imagenp01 {
   size: 40px;
 }
 
-.ED {
-  line-height: 40px;
-}
-
-.ED:hover {
+.p02:hover {
   font-family: var(--font-family-cursive);
 }
 
-.RD:hover {
+.p03:hover {
   font-family: var(--font-family-cursive);
 }
 
-.R:hover {
+.p04:hover {
   font-family: var(--font-family-cursive);
 }
 
-.UF {
-  line-height: 30px;
-}
 
-.UF:hover {
+.p05:hover {
   font-family: var(--font-family-cursive);
 }
