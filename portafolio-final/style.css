@@ -1,0 +1,327 @@
+/* Imports - Tipografía */
+@font-face {
+  font-family: "Arimo";
+  src: url("https: //res.cloudinary.com/centrooooo/raw/upload/v1650990860/fonts/Arimo-Regular_cvljno.woff"),
+    format(" woff");
+}
+
+/* @font-face {
+  font-family: "MyFont";
+  src: url("https: //res.cloudinary.com/centrooooo/raw/upload/v1651866293/fonts/MissFajardose-Regular_eu8nsb.woff"),
+    format("woff");
+} */
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+ul {
+  margin: 0;
+  padding-inline: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  /* max-width: 65%; */
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behaviour: auto !important;
+  }
+}
+
+/* Variables */
+:root {
+  /* 1. Colores */
+  --black: #000000;
+  --white: #ffffff;
+  /* 2. Tipografía */
+  --font-family-arimo: "Arimo", sans-serif;
+  --font-family-cursive: "Miss Fajardose", cursive;
+  --font-size-1: 1rem;
+  --font-size-2: 1.1rem;
+  --font-size-3: 1.25rem;
+  --font-size-4: 1.5rem;
+  --font-size-5: 2rem;
+  --font-size-6: 2.5rem;
+  --font-size-fluid-1: clamp(1rem, 4vw, 1.5rem);
+  --font-size-fluid-2: clamp(1.5rem, 6vw, 2.5rem);
+  --font-size-fluid-3: clamp(2rem, 9vw, 3.5rem);
+  /* 3. Layouts */
+  --size-mobile: 414px;
+  --size-desktop: 1440px;
+}
+
+/* Base */
+body {
+  font-family: var(--font-family-arimo);
+  background-color: var(--white);
+  color: var(--black);
+}
+
+h1 {
+  font-family: var(--font-family-cursive);
+  font-size: 30px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+  font-family: var(--font-family-arimo);
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+h1:hover,
+h2:hover {
+  font-family: var(--font-family-cursive);
+}
+
+p {
+  font-family: var(--font-family-arimo);
+  font-size: 15px;
+}
+
+/* Home */
+.home {
+  display: grid;
+  grid-template-columns: 65px 3fr 1fr;
+  font-size: 35px;
+}
+
+.pagina-portafolio .home {
+  display: flex;
+}
+
+.pagina-portafolio .home .proyectos {
+  flex: 1;
+  width: calc(100vw - 80px);
+}
+
+.pagina-portafolio .portafolio,
+.portafolio:hover {
+  font-family: var(--font-family-cursive);
+  font-size: 28px;
+}
+
+.pagina-contacto .contacto,
+.contacto:hover {
+  font-family: var(--font-family-cursive);
+  font-size: 28px;
+}
+
+.pagina-cv .cv,
+.cv:hover {
+  font-family: var(--font-family-cursive);
+  font-size: 28px;
+}
+
+.contacto:hover {
+  font-family: var(--font-family-cursive);
+  font-size: 28px;
+}
+
+/* Nav */
+.navhome {
+  writing-mode: vertical-rl;
+  border: 0.75px solid black;
+  height: 100vh;
+  font-size: 35px;
+}
+
+.navhome ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transform: rotate(180deg);
+  width: 65px;
+}
+
+.navhome ul li {
+  cursor: pointer;
+}
+
+.navhome ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.navlista {
+  width: 100%;
+  height: 100vh;
+  place-content: center;
+  /* background-color: blue; */
+}
+
+.navlista ul {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.navlista ul li {
+  text-align: right;
+  padding-right: 700px;
+}
+
+.navlista ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.navlista ul a img {
+  position: absolute;
+  max-width: 600px;
+  height: 100vh;
+  /* posicion de la imagen */
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.navlista ul li:hover:nth-child(1)+img,
+.navlista ul li:hover:nth-child(2)+img,
+.navlista ul li:hover:nth-child(3)+img,
+.navlista ul li:hover:nth-child(4)+img {
+  display: block;
+}
+
+.navhome ul .active {
+  font-family: var(--font-family-cursive);
+}
+
+/* .nav ul .active:hover {
+} */
+
+/* Proyectos */
+.proyectos {
+  display: flex;
+  align-items: center;
+  line-height: 150px;
+  justify-content: space-around;
+
+}
+
+.imagen {
+  max-width: 900px;
+}
+
+
+.carrusel {
+  /* border: 2px solid red; */
+  display: flex;
+  /* max-height: 281.25px; */
+  max-height: 900px;
+  max-width: 800px;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.p01:hover {
+  font-family: var(--font-family-cursive);
+  font-size: 28px;
+}
+
+.imagenp01 {
+  size: 40px;
+}
+
+.p02:hover {
+  font-family: var(--font-family-cursive);
+  font-size: 28px;
+}
+
+.p03:hover {
+  font-family: var(--font-family-cursive);
+  font-size: 28px;
+}
+
+.p04:hover {
+  font-family: var(--font-family-cursive);
+  font-size: 28px;
+}
+
+
+.p05:hover {
+  font-family: var(--font-family-cursive);
+  font-size: 28px;
+}
+
+.proyecto01 {
+  font-family: var(--font-family-cursive)
+}
+
+.proyecto02 {
+  font-family: var(--font-family-cursive)
+}
+
+.proyecto03 {
+  font-family: var(--font-family-cursive)
+}
+
+.proyecto04 {
+  font-family: var(--font-family-cursive)
+}
+
+
+
+.dos-cols {
+  display: flex;
+  gap: 80px;
+}
+
+.dos-cols .carrusel {
+  width: auto;
+}
+
+.dos-cols .texto {
+  height: 500px;
+  display: grid;
+  place-content: center;
+  width: min-content;
+  overflow-wrap: break-word;
+}
+
+.imagen img {
+  max-width: 900px;
+  margin: auto;
+}
